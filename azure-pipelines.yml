@@ -22,7 +22,7 @@ stages:
       inputs:
         containerRegistry: 'k8s'
         repository: 'imageRepo'
-        command: 'build'
+        command: 'buildAndPush'
         Dockerfile: '$(Build.SourcesDirectory)/app/Dockerfile'
         tags: |
           $(tag)
